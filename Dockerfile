@@ -13,4 +13,4 @@ WORKDIR /var/www/fakeimage
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer install --no-interaction
 
-CMD [ "php", "-S", "0.0.0.0:9000", "-t", "./public", "./config/local_router.php" ]
+CMD [ "php", "-S", "0.0.0.0:9000", "-t", "./public", "./config/server.php" ]
